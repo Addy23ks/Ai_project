@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sample-medical-01",
+    "name": "Clinical Consultation Note - Eleanor Vance",
+    "style": "cursive with medical shorthand",
+    "page_count": 1,
+    "expected_transcription": "Patient Consultation Note\nDate: 14 Oct 2024\nPatient: Eleanor Vance (ID: EV-88219)\n\nChief Complaint: Persistent cough and mild dyspnea for 3 weeks.\nHistory: No history of smoking. Prior allergy to penicillin noted in 2018.\nExamination: BP 124/82 mmHg, HR 76 bpm, SpO2 97% on room air.\nChest clear to auscultation bilaterally. No audible wheezes or crackles.\n\nAssessment & Plan:\n1. Upper respiratory tract post-viral hyperreactivity.\n2. Prescribe Albuterol inhaler 90 mcg 2 puffs PRN.\n3. Do NOT initiate oral corticosteroids at this time.\n4. Follow-up in clinic in 14 days if symptoms persist.",
+    "critical_fields": {
+      "patient_id": "EV-88219",
+      "date": "14 Oct 2024",
+      "dosage": "90 mcg",
+      "critical_negation": "Do NOT initiate"
+    },
+    "expected_status": "Passed Validation"
+  },
+  {
+    "id": "sample-contract-02",
+    "name": "Equipment Rental Agreement Addendum",
+    "style": "irregular handwriting with strikethrough",
+    "page_count": 1,
+    "expected_transcription": "Equipment Addendum\nAgreement Date: 02 Nov 2024\nVendor: Apex Industrial Services Ltd.\n\nItem: Heavy Diesel Generator Model 400X\nDeposit Received: $1,500.00 USD\nDaily Rate: $250.00 net 30 days\n\nSpecial Clauses:\n- Fuel must be topped up prior to return.\n- Lessee is NOT liable for pre-existing transmission wear.\n- Return deadline: 16 Nov 2024 at 17:00.",
+    "critical_fields": {
+      "amounts": ["$1,500.00", "$250.00"],
+      "dates": ["02 Nov 2024", "16 Nov 2024"],
+      "critical_negation": "is NOT liable"
+    },
+    "expected_status": "Passed Validation"
+  }
+]
